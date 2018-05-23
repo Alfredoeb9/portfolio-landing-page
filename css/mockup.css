@@ -1,0 +1,123 @@
+/* Universal Setting */
+
+*,
+*:after,
+*:before {
+ margin: 0;
+ padding: 0;
+ box-sizing: inherit;
+ -webkit-box-sizing: inherit;
+ -moz-box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* This makes everything 10 px easier for mutliplying and dividing */
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* Page settings */
+.portfolio {
+  height: 100%;
+  width: 100%;
+}
+.portfolio_container {
+  max-width: 100%;
+  width: 72%;
+  margin: 0 auto;
+  text-align: center;
+}
+.portfolio_header {
+  display: inline-block;
+  background: #fff;
+  border-bottom: 2px solid #2d3c49;
+  height: 13rem;
+  width: 100%;
+}
+.portfolio_logo {
+  max-width: 100%;
+  width: 17%;
+  float: left;
+}
+.portfolio_author {
+  position: relative;
+  top: 2.2rem;
+  float: right;
+}
+.portfolio_name {
+  font-size: 3rem;
+  font-weight: 300;
+
+}
+.portfolio_job {
+  font-size: 2.2rem;
+}
+/*  Main image */
+.portfolio_mainImage {
+  max-width: 100%;
+  padding: 2rem 0rem;
+}
+.portfolio_image {
+  width: 100%;
+  height: 55rem
+}
+.featured {
+  /* text-align: left; */
+}
+.featured_mainHeading {
+  font-size: 3.8rem;
+  text-align: left;
+  color: #7d97ad;
+}
+.featured_content {
+  width: 33%;
+  display: inline-block;
+  height: 100%;
+  padding: 4rem 2rem 0rem;
+  vertical-align: top;
+}
+.featured_img {
+  max-width: 100%;
+}
+.featured_heading {
+  font-size: 3rem;
+  padding: 1rem 0rem;
+}
+.featured_link {
+  font-size: 2.2rem;
+  padding: .5rem 0rem;
+}
+@media screen and (max-width: 1075px ) {
+  .portfolio_logo {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .portfolio_logo {
+    width: 35%;
+  }
+  .featured_content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px ) {
+  .portfolio_header {
+    position: relative;
+    top: 3rem;
+  }
+  .portfolio_name {
+    font-size: 2.5rem;
+  }
+  .portfolio_job {
+    font-size: 1.7rem;
+  }
+  .portfolio_mainImage {
+    padding: 4rem 0rem;
+  }
+  .portfolio_image {
+    height: 35rem;
+  }
+}
